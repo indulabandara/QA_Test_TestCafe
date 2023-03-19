@@ -18,8 +18,8 @@ const randomZipcode= faker.address.zipCode();
 const continueButton= Selector('#continue');
 const FinshButton= Selector('#finish');
 const checkProductprice= Selector('.inventory_item_price')
-const itmesVerife= Selector('#item_4_title_link')
-const itmesVerife2= Selector('#item_1_title_link')
+const itmesVerify= Selector('#item_4_title_link')
+const itmesVerify2= Selector('#item_1_title_link')
 
 
 
@@ -94,15 +94,15 @@ fixture `Access Demo Site`
         .click(firstItem)
         .click(secondItem)
         .click(cartButton)
-        .expect(itmesVerife.exists).ok()
-        .expect(itmesVerife2.exists).ok()
+        .expect(itmesVerify.exists).ok()
+        .expect(itmesVerify2.exists).ok()
         
        
 
     });
 
 
-    test('Click checkout button', async t =>{
+    test('Click checkoutButton', async t =>{
         await t
         .typeText(usernameInput,'performance_glitch_user')
         .typeText(passwordInput,'secret_sauce')
