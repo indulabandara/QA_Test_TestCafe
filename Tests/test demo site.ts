@@ -35,7 +35,7 @@ fixture `Access Demo Site`
 
      test(`Automate Site Testing`, async t =>{
 
-        //Here write  test code
+        //loading web site
 
     });
 
