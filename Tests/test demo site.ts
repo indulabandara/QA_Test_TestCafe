@@ -86,7 +86,7 @@ fixture `Access Demo Site`
     });
 
 
-    test.only('Verify if the selected items are in the cart ', async t =>{
+    test('Verify if the selected items are in the cart ', async t =>{
         await t
         .typeText(usernameInput,'performance_glitch_user')
         .typeText(passwordInput,'secret_sauce')
@@ -111,8 +111,7 @@ fixture `Access Demo Site`
         .click(secondItem)
         .click(cartButton)
         .click(checkoutButton)
-        
-       
+
 
     });
 
